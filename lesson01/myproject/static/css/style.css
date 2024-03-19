@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  font-size: 3rem;
+  background-color: beige;
+  color: salmon;
+}
+
+nav {
+  padding: 1rem;
+  background-color: salmon;
+  color: white;
+  font-size: 2.5rem;
+}
+
+main {
+  display: grid;
+  margin: 1rem;
+}
+
+h1{
+  text-align: start;
+  font-size: 5rem;
+}
+
+h2{
+  font-size: 2.5rem;
+  text-align: start;
+}
+
+p {
+  font-size: 2rem;
+  margin: 0 0 1rem 1rem; 
+}
+
+a {
+  text-decoration: none;
+  color: brown;
+}
+
+a:hover {
+  opacity: .85;
+}
+
+.post {
+  margin-bottom: 3rem;
+}
+
+.banner {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 1rem;
+}
+
+.timestamp {
+  font-size: 1rem;
+}
+
+form {
+  margin: 1rem 0;
+}
+
+label {
+  font-size: 2rem;
+}
+
+input {
+  min-width: 200px;
+  min-height: 40px;
+  font-size: 1.5rem;
+}
+
+.helptext {
+  font-size: 1rem;
+  color: salmon;
+}
+
+.helptext>ul>li {
+list-style-type: none; 
+}
+
+.errorlist{
+  font-size: 1.2rem;
+  color: red;
+  text-decoration: underline;
+  list-style-type: none; 
+}
+
+button {
+  margin: 1rem 0;
+  padding: 12px 8px;
+  font-size: 1rem;
+  border-radius: 10px;
+  background-color: salmon;
+  border: 2px solid pink;
+  color: white
+}
+
+button:hover {
+  background-color: beige;
+  border: 2px solid salmon;
+  color: salmon
+}
+
+.logout {
+  display: inline-block;
+}
+
+.logout-button {
+  font-size: 2rem;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* .logout-button:hover {
+  opacity: .85;
+  padding: 0;
+  margin: 0;
+} */

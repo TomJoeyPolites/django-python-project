@@ -1,0 +1,20 @@
+<!-- prettier-ignore -->
+{% extends 'layout.html' %} 
+{% block title %} 
+	User Login 
+{% endblock %} 
+{% block content %}
+<h1>User Login</h1>
+<form action="/users/login/" method="post">
+	<!-- prettier-ignore -->
+	{% csrf_token %}
+	<!-- prettier-ignore -->
+	{{ form }}
+	<!-- prettier-ignore -->
+	{% if request.GET.next %}
+	<input type="hidden" name="next" value="{{request.GET.next}}" />
+	{% endif %}
+	<button>Submit</button>
+</form>
+<p>Not a User? Click to <a href="{% url 'users:register' %}">Sign Up!</a></p>
+{% endblock %}

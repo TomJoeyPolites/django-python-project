@@ -1,0 +1,15 @@
+<!-- prettier-ignore -->
+{% extends 'layout.html' %} 
+{% block title %} 
+	Users | Register 
+{% endblock %} 
+{% block content %}
+<h1>Sign Up!</h1>
+<form action="/users/register/" method="post">
+	<!-- prettier-ignore -->
+	{% csrf_token %}
+	<!-- prettier-ignore -->
+	{{ form }}
+	<button>Submit</button>
+</form>
+{% endblock %}

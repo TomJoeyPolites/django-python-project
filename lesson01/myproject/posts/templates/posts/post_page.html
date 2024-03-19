@@ -1,0 +1,14 @@
+<!-- prettier-ignore -->
+{% extends 'layout.html' %} 
+{% block title %} 
+  {{ post.title }}
+{% endblock %} 
+{% block content %}
+<section>
+	<h1>{{ post.title }}</h1>
+	<p>{{ post.body }}</p>
+	<img class="banner" src="{{post.banner.url}}" alt="{{post.title}}" />
+	<p class="timestamp">{{ post.date }}</p>
+	<p>Return to <a href="/posts">posts</a> page.</p>
+</section>
+{% endblock %}
